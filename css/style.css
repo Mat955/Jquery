@@ -1,0 +1,43 @@
+body {
+  padding: 10px;
+  background-color: #FFDEAC;
+}
+
+.container {
+  display: inline-block;
+  width: 400px;
+  margin: 0 100px;
+}
+
+section {
+  padding: 10px;
+  text-align: center;
+}
+
+.accordion {
+  border: 1px solid #6b66ff;
+}
+
+.accordion h3 {
+  background-color: #9c99ff;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #6b66ff;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.accordion h3 + div {
+  height: 0;
+  overflow: hidden;
+  border-bottom: none;
+  padding: 3px;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.accordion h3.active + div {
+  height: 100px;
+  overflow: auto;
+}
+/*# sourceMappingURL=style.css.map */
